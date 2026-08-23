@@ -1,3 +1,6 @@
+# Directories with user specific developement helpers
+temp
+
 # Prerequisites
 *.d
 
