@@ -21,3 +21,13 @@ cd build
 cmake .. -G "Ninja" -D CMAKE_TOOLCHAIN_FILE="..\toolchain.cmake"
 cmake --build .
 ```
+
+## Running
+There are no extra dependencies for running the app, althrough if you want to avoid CORS policy issues
+when loading from file, you will need a simple http server.
+
+Python example ran in root of the project:
+```
+python -m http.server
+```
+After that, wash should be available under `http://localhost:8000`
