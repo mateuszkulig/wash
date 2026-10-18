@@ -2,6 +2,8 @@
 cmake_minimum_required(VERSION 3.21)
 project(wash VERSION 0.1.0 LANGUAGES C)
 
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}) # Place all binaries at the root of build directory
+
 # Compiler setup
 if(NOT (CMAKE_C_COMPILER_ID STREQUAL "Clang"))
     message(WARNING
@@ -22,3 +24,8 @@ include_directories(${washSrc})
 
 # Main module
 add_executable(wash ${washSrc}/wash.c)
+
+# Playground module
+if(WASH_COMPILE_PLAYGROUND)
+    add_subdirectory(src/playground)
+endif()

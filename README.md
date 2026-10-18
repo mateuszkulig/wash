@@ -21,6 +21,11 @@ cd build
 cmake .. -G "Ninja" -D CMAKE_TOOLCHAIN_FILE="..\toolchain.cmake"
 cmake --build .
 ```
+Additional playground module can be compiled using `WASH_COMPILE_PLAYGROUND=TRUE` argument provided
+on CMake configure (first) call. See [playground readme](src/playground/playground.md) for details.
+```
+cmake .. -G "Ninja" -D CMAKE_TOOLCHAIN_FILE="..\toolchain.cmake" -D WASH_COMPILE_PLAYGROUND=TRUE
+```
 
 ## Running
 There are no extra dependencies for running the app, althrough if you want to avoid CORS policy issues
