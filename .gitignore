@@ -1,3 +1,10 @@
+# Build directory
+build
+
+# Directories with user specific developement helpers
+temp
+user_scripts
+
 # Prerequisites
 *.d
 
