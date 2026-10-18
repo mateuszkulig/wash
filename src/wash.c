@@ -1,3 +1,11 @@
+#define arrSize 10
+#define returnCode 0xff
+
+unsigned char somearray[arrSize];
+
 void _start() {
-    const int success = 0xff;
+    for (int i=0; i < arrSize; ++i) {
+        somearray[i] = returnCode;
+    }
+    const int success = returnCode;
 }

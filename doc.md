@@ -11,3 +11,4 @@ Knowledge base of various articles that help develop WASM stuff.
 
 # Empiric knowledge
 WASM default linear memory array is 128 KiB and filled with 0s with just the `_start` function.
+Global array is stored starting from byte 1024 (`0x400`).
