@@ -5,6 +5,8 @@
 
 // Change this when deployed, this is a path for local developement
 const moduleName = "build/wash.wasm";
+// const moduleName = "build/playground.wasm" // Use instead to check out the playground
+
 let wasmInstance;   // For debugging from browser console
 
 WebAssembly.instantiateStreaming(fetch(moduleName)).then(

@@ -2,6 +2,7 @@
 build
 
 # Directories with user specific developement helpers
+.vscode
 temp
 user_scripts
 
